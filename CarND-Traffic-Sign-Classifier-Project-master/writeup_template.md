@@ -40,6 +40,7 @@ The goals / steps of this project are the following:
 
 I found summary statistics of the traffic signs data set:
 | Data set         		|     size	        					|
+|:-------------------------:|:--------------:| 
 | The size of training set    |      34799      |
 | The size of the validation set  |     4410    |
 | The size of test set  |    12630    |
