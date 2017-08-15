@@ -39,12 +39,12 @@ The goals / steps of this project are the following:
 ####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I found summary statistics of the traffic signs data set:
-
-|The size of training set|34799|
-|The size of the validation set|4410|
-|The size of test set|12630|
-|The shape of a traffic sign image|(32, 32, 3)|
-|The number of unique classes/labels in the data set|43|
+| Data set         		|     size	        					|
+| The size of training set    |      34799      |
+| The size of the validation set  |     4410    |
+| The size of test set  |    12630    |
+| The shape of a traffic sign image  |    (32, 32, 3)    |
+| The number of unique classes/labels in the data set    |     43    |
 
 ####2. Include an exploratory visualization of the dataset.
 
