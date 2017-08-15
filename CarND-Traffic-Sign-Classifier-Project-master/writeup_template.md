@@ -111,9 +111,11 @@ learning rate | 0.001
 
 My final model results were:
 
-training set accuracy  |
-validation set accuracy  |
-test set accuracy | 
+set |
+|---|---|
+training set accuracy  | 0.984
+validation set accuracy  | 0.884
+test set accuracy | 0.874
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
