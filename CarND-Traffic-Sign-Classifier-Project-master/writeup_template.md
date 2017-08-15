@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/visualization.jpg "Visualization"
+[image12]: ./examples/data0.jpg "Data"
 [image2]: ./examples/grayscale0.jpg "Grayscaling"
 [image3]: ./examples/normal0.jpg "Normalizing"
 [image4]: ./NewImages/0.jpg "Traffic Sign 1"
@@ -23,6 +24,7 @@ The goals / steps of this project are the following:
 [image6]: ./NewImages/2.jpg "Traffic Sign 3"
 [image7]: ./NewImages/3.jpg "Traffic Sign 4"
 [image8]: ./NewImages/4.jpg "Traffic Sign 5"
+
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -59,7 +61,7 @@ As a first step, I decided to convert the images to grayscale because ...
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![alt text][image1]  ![alt text][image2]
 
 As a last step, I normalized the image data because ...
 
