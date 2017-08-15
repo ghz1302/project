@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./examples/visualization.png "Visualization"
 [image12]: ./examples/data0.jpg "Data"
 [image2]: ./examples/grayscale0.jpg "Grayscaling"
 [image3]: ./examples/normal0.jpg "Normalizing"
@@ -26,13 +26,10 @@ The goals / steps of this project are the following:
 [image8]: ./NewImages/4.jpg "Traffic Sign 5"
 
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
-
 ---
 ###Writeup / README
 
-####My [project code](https://github.com/ghz1302/project/blob/master/CarND-Traffic-Sign-Classifier-Project-master/Traffic_Sign_Classifier.ipynb)
+###My [project code](https://github.com/ghz1302/project/blob/master/CarND-Traffic-Sign-Classifier-Project-master/Traffic_Sign_Classifier.ipynb) is here.
 
 ###Data Set Summary & Exploration
 
@@ -50,7 +47,7 @@ I found summary statistics of the traffic signs data set:
 
 ####2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. 
 
 ![alt text][image1]
 
