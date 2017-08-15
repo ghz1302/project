@@ -3,4 +3,3 @@
 3. 12, priority
 4. 39, left
 5. 3, 60km
-6. 13, yield
