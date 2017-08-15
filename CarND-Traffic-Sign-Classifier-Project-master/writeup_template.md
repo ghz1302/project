@@ -111,7 +111,7 @@ learning rate | 0.001
 
 My final model results were:
 
-set |
+set | |
 |---|---|
 training set accuracy  | 0.984
 validation set accuracy  | 0.884
