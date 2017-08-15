@@ -16,8 +16,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image2]: ./examples/gray scale0.jpg "Grayscaling"
+[image3]: ./examples/normal0.jpg "Normalizing"
 [image4]: ./NewImages/0.jpg "Traffic Sign 1"
 [image5]: ./NewImages/1.jpg "Traffic Sign 2"
 [image6]: ./NewImages/2.jpg "Traffic Sign 3"
