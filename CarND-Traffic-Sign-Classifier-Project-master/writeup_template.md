@@ -55,23 +55,18 @@ Here is an exploratory visualization of the data set.
 
 ####1. Describe how preprocessed the image data.
 
-As a first step, I convert the images to grayscale because it makes easier to compute
+As a first step, I convert the images to grayscale because it makes easier to compute and faster.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![alt text][image12]  ![alt text][image2]
 
-As a last step, I normalized the image data because ...
+As a last step, I normalized the image data because it makes easier for classifier to learn.
 
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
+Here is an example of normalized image:
 
 ![alt text][image3]
 
-The difference between the original data set and the augmented data set is the following ... 
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
@@ -107,9 +102,7 @@ EPOCHS | 20
 BATCH_SIZE | 512
 learning rate | 0.001
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
-
-My final model results were:
+and results were
 
 set | |
 |---|---|
@@ -117,31 +110,37 @@ training set accuracy  | 0.984
 validation set accuracy  | 0.884
 test set accuracy | 0.874
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+It didn't reach the goal ' Validation accuracy 0.93', so I tried different number of parameters. 
+I used lower learning rate and more epochs because it could make loss lower.
+And smaller batches sizes could have better accuracy, so I used smaller batch sizes.
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+parameter| |
+|---|---|
+mu | 0
+sigma | 0.078
+BATCH_SIZE | 192
+learning rate | 0.0009
+
+At EPOCH 42, I got results :
+
+set | |
+|---|---|
+training set accuracy  | 1.000
+validation set accuracy  | 0.932
+test set accuracy | 0.914
+
 
 ###Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+####1. Choose five German traffic signs found on the web and provide them in the report. 
 
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set.
 
 Here are the results of the prediction:
 
@@ -154,11 +153,11 @@ Here are the results of the prediction:
 | Speed limit (60km/h)			| Speed limit (60km/h)      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 
-The top five soft max probabilities
+The top five soft max probabilities of using parameters about validation set accuracy 0.884
 For the first image
 
 | Probability         	|     Prediction	        					| 
@@ -210,3 +209,5 @@ For the fifth image
 | .000005	      			| Ahead only 			 				|
 | .0000008				    | Speed limit (30km/h)     							|
 
+After, I tried parameters about validation set accuracy 0.932.
+I got almost 1.00 probability about all of 5 traffic signs.
